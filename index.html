@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW.com</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="rsc/bmw logo.png" />
+  </head>
+  <body>
+    <!-- Section with Video Background -->
+    <section class="hero-section">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="m8 noq_1_chr2_prob3_chr2_prob3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="logo">
+          <div class="logo-image">
+            <img src="rsc/bmw logo.png" alt="logo" width="50px" height="50px" />
+          </div>
+          <div class="logo-text">Sheer Driving Pleasure</div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#models">Models</a></li>
+          <li><a href="#booknow">Book now</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero Content -->
+      <div class="content">
+        <h1>The Ultimate Driving Machine</h1>
+        <p>
+          In the world of cars, BMW is a symbol of driving dynamics and
+          excitement.
+        </p>
+      </div>
+    </section>
+
+    <!-- Another Section -->
+
+    <section id="models">
+      <h2>BMW M SERIES MODELS</h2>
+      <div class="container">
+        <div class="slide">
+          <div class="item" style="background-image: url(./BMW\ M8.jpg)">
+            <div class="car">
+              <div class="car-name">BMW M8</div>
+              <div class="des"></div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(./BMW\ M5.jpg)">
+            <div class="car">
+              <div class="car-name">BMW M5</div>
+              <div class="des"></div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(./BMW\ M4.jpg)">
+            <div class="car">
+              <div class="car-name">BMW M4</div>
+              <div class="des"></div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(./BMW\ M3.jpg)">
+            <div class="car">
+              <div class="car-name">BMW M3</div>
+              <div class="des"></div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(./BMW\ M2.jpg)">
+            <div class="car">
+              <div class="car-name">BMW M2</div>
+              <div class="des"></div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(./BMW\ M135.jpg)">
+            <div class="car">
+              <div class="car-name">BMW M135</div>
+              <div class="des"></div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="booknow">
+      <div class="book-now">
+        <div class="form-wrapper">
+          <div class="">
+            <h1>BOOK A TEST DRIVE</h1>
+            <p>
+              Submit your details and your preferred dealership will contact you
+              to arrange your test drive.
+            </p>
+            <form>
+              <div class="form-group">
+                <div class="flex">
+                  <div>
+                    <select name="title" required>
+                      <option value="">Mr.</option>
+                      <option value="Ms.">Ms.</option>
+                    </select>
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      name="first_name"
+                      placeholder="Enter First Name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      name="last_name"
+                      placeholder="Enter Last Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter Email"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      name="mobile"
+                      placeholder="Enter Mobile Number"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="flex">
+                  <div>
+                    <select name="model" required>
+                      <option value="BMW M8 Series LWB">
+                        The BMW M8 Series
+                      </option>
+                      <option value="BMW M5 Series">The BMW M5 Series</option>
+                      <option value="BMW M4 Series">The BMW M4 Series</option>
+                      <option value="BMW M3 Series">The BMW M3 Series</option>
+                      <option value="BMW M3 Series">The BMW M2 Series</option>
+                      <option value="BMW M135 Series">
+                        The BMW M135 Series
+                      </option>
+                    </select>
+                  </div>
+                  <div>
+                    <select name="city" required>
+                      <option value="">--Preferred City--</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Bangalore">Bangalore</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-check">
+                  <label>
+                    <input type="checkbox" name="offers" /> Interested in BMW
+                    Financial Services plans and offers.
+                  </label>
+                  <br />
+                  <label>
+                    <input type="checkbox" name="terms" required /> I accept the
+                    <a href="#">Terms and Conditions</a>.
+                  </label>
+                </div>
+                <div class="flex">
+                  <button type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+            <p class="disclaimer">
+              *Terms and conditions apply. The model, equipment, and possible
+              vehicle configurations illustrated in this advertisement may
+              differ from the vehicles supplied in the market.
+            </p>
+          </div>
+        </div>
+        <div class="form-image"></div>
+      </div>
+    </section>
+    <script type="text/javascript" src="slide.js"></script>
+  </body>
+</html>
